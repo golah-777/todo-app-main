@@ -1,0 +1,26 @@
+@media only screen and (min-width:375px) and (max-width:424px) {
+  .main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    transform: translate(-50%,-50%);
+    max-width: 340px;
+  }
+}
+
+
+@media only screen and (min-width:425px) and (max-width:760px){
+  .main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+  }
+}

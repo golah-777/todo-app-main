@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Kumbh+Sans:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Overpass&family=Poppins:wght@200;300;400;500;600;700&family=REM:wght@300;500;600&family=Roboto:wght@300;400;500;700&family=Spectral:wght@200;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+  font-family: 'Josefin Sans',
+  'Roboto', Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background: hsl(235, 21%, 11%);
+  color: white;
+}
+
+.js-style-body{
+  height: 100vh;
+  background: white;
+  color: hsl(235, 21%, 11%);
+}
+
+.main-div{
+  background:url(images/bg-desktop-dark.jpg);
+  background-repeat: none;
+  background-size:cover;
+  /* background-position: 0px -0px; */
+  height: 20rem;
+  width: 100vw;
+}
+
+.js-main-div{
+  background:url(images/bg-desktop-light.jpg);
+  background-repeat: none;
+  background-size:cover;
+  /* background-position: 0px 0px; */
+  height: 20rem;
+  width: 100vw;
+}
+
+.main{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-width: 1px;
+  border-color: transparent;
+  border-style: solid;
+  transform: translate(-50%,-50%);
+  width: 400px;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: aliceblue;
+  width: 100%;
+}
+
+.create-note,.task, footer{
+  border-width: 1px;
+  border-color: hsl(235, 24%, 19%);
+  border-style: solid;
+  width: 100%;
+  height: 2.35rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0px ;
+  background-color: hsl(235, 24%, 19%);
+}
+
+.js-create-none-task-footer{
+  border-width: 1px;
+  border-color: hsl(235, 24%, 19%);
+  border-style: solid;
+  width: 100%;
+  height: 2.35rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin: 20px 0px ; */
+  background-color: white;
+  border: 0px;
+}
+
+.input{
+  width: 76%;
+  height: 98%;
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0px;
+  color: aliceblue;
+}
+
+input:focus{
+  outline: none;
+  color:white;
+}
+
+.circle{
+  width:1.25rem;
+  height: 1.25rem;
+  border-width: 1px;
+  border-color: hsl(233, 14%, 35%);
+  border-style: solid;
+  border-radius: 50%;
+  margin: 0px 15px;
+
+  
+}
+
+.circle-task{
+  width:1.25rem;
+  height: 1.25rem;
+  border-width: 1px;
+  border-color: hsl(233, 14%, 35%);
+  border-style: solid;
+  border-radius: 50%;
+  margin: 0px 15px;
+  /* Background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)); */
+  /* border-image-slice: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 1s;
+}
+
+.check{
+  display: none;
+}
+
+
+.delete{
+  /* position: relative;
+  left: 19rem; */
+  display: none;
+  transition: 1s;
+}
+
+.flex{
+  width: 82%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.texts-js{
+ text-decoration: line-through;
+ color: hsl(233, 14%, 35%);
+ transition: 1.5s;
+}
+
+.tasks-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid;
+  border-radius: 9px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  /* background-color: aqua; */
+}
+
+.task{
+  margin: 0px ;
+  border:0px solid hsl(233, 14%, 35%);
+  border-bottom-width: 0.5px;
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+}
+
+.tasks{
+  background-color: hsl(235, 24%, 19%);
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  color:hsl(233, 14%, 35%);
+  align-items: center;
+  font-size: 0.7rem;
+  justify-content: space-between;
+  /* border: 0px; */
+}
+
+.number-of-items{
+  margin-left :15px;
+}
+
+.all-active-completed span{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.clear-completed{
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.all-active-completed span:active{
+  color: aliceblue;
+  transition: 0.5s;
+}
+
+.clear-completed:active{
+  color: aliceblue;
+  transition: 0.5s;
+}
+
+.active{
+  color:  hsl(220, 98%, 61%);
+  transition: 2s;
+}
+
+.attribution {
+ font-size: 11px; 
+ text-align: center; 
+ margin-top: 2rem;
+
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
